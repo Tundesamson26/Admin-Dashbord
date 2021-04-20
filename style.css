@@ -290,7 +290,7 @@ tr td:last-child{
     }
     .sidebar .sidebar-brand h2 span:last-child,
     .sidebar li a h2 span:last-child{
-        display: none;
+        display: inline;
     }
     #nav-toggle:checked + .sidebar{
         left: 0 !important;
@@ -311,7 +311,7 @@ tr td:last-child{
     }
     .sidebar:hover .sidebar-brand h2 span:last-child,
     .sidebar:hover li a span:last-child{
-        display: none;
+        display: inline;
     }
     .main-content{
         margin-left: 70px;
@@ -429,7 +429,29 @@ tr td:last-child{
     }
 }
 @media (max-width: 560px){
+    .user-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .user-wrapper img{
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-left: 0.5rem;
+    }
+    .user-wrapper h4{
+       display: none;
+    }
+    .user-wrapper small{
+        display: none;
+    }
     .cards{
         grid-template-columns: 100%;
+    }
+    .sidebar:hover .sidebar-brand h2 span:last-child,
+    .sidebar:hover li a span:last-child{
+        display: inline;
     }
 }
