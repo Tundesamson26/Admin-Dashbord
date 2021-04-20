@@ -17,7 +17,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 345px;
+    width: 330px;
     height: 100%;
     background:  var(--main-color);
     z-index: 100;
@@ -68,7 +68,7 @@
     padding-left: 0rem;
 }
 #nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
-#nav-toggle:checked + .sidebar li a h2 span:last-child{
+#nav-toggle:checked + .sidebar li a span:last-child{
     display: none;
 }
 #nav-toggle:checked ~ .main-content{
@@ -91,7 +91,7 @@ header {
     left: 345px;
     top: 0;
     background: #fff;
-    width: calc(100% - 345px);
+    width: calc(100% - 330px);
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.5rem;
