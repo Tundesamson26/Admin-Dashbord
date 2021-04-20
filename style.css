@@ -310,7 +310,7 @@ tr td:last-child{
         padding-left: 1rem;
     }
     .sidebar:hover .sidebar-brand h2 span:last-child,
-    .sidebar:hover li a h2 span:last-child{
+    .sidebar:hover li a span:last-child{
         display: inline;
     }
     .main-content{
