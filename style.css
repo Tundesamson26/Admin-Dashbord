@@ -374,6 +374,19 @@ tr td:last-child{
     .sidebar{
         left: -100% !important;
     }
+    .user-wrapper img{
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-left: 0.5rem;
+    }
+    .user-wrapper h4{
+       display: none;
+    }
+    .user-wrapper small{
+        display: none;
+    }
     #nav-toggle:checked + .sidebar{
         left: 0 !important;
         width: 345px;
