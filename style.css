@@ -311,7 +311,7 @@ tr td:last-child{
     }
     .sidebar:hover .sidebar-brand h2 span:last-child,
     .sidebar:hover li a span:last-child{
-        display: inline;
+        display: none;
     }
     .main-content{
         margin-left: 70px;
