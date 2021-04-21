@@ -292,11 +292,6 @@ tr td:last-child{
     .sidebar li a h2 span:last-child{
         display: none;
     }
-    #nav-toggle:checked + .sidebar{
-        left: 0 !important;
-        width: 345px;
-        z-index: 100;
-    }
     .sidebar:hover{
         width: 345px;
         z-index: 200;
@@ -311,7 +306,7 @@ tr td:last-child{
     }
     .sidebar:hover .sidebar-brand h2 span:last-child,
     .sidebar:hover li a span:last-child{
-        display: none;
+        display: inline;
     }
     .main-content{
         margin-left: 70px;
@@ -387,24 +382,24 @@ tr td:last-child{
     .user-wrapper small{
         display: none;
     }
-    .sidebar{
+    #nav-toggle:checked + .sidebar{
         left: 0 !important;
         width: 345px;
         z-index: 100;
     }
-    .sidebar .sidebar-brand,
-    .sidebar li{
+    #nav-toggle:checked + .sidebar .sidebar-brand,
+    #nav-toggle:checked + .sidebar li{
         padding-left: 2rem;
         text-align: left;
     }
-    .sidebar li a{
+    #nav-toggle:checked + .sidebar li a{
         padding-left: 1rem;
     }
-    .sidebar .sidebar-brand h2 span:last-child,
-    .sidebar li a h2 span:last-child{
-        display: none;
+    #nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
+    #nav-toggle:checked + .sidebar li a h2 span:last-child{
+        display: inline;
     }
-    .main-content{
+    #nav-toggle:checked ~ .main-content{
         margin-left: 0rem !important;
     }
     header{
@@ -462,9 +457,5 @@ tr td:last-child{
     }
     .cards{
         grid-template-columns: 100%;
-    }
-    .sidebar:hover .sidebar-brand h2 span:last-child,
-    .sidebar:hover li a span:last-child{
-        display: none;
     }
 }
