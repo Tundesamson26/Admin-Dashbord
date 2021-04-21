@@ -276,7 +276,7 @@ tr td:last-child{
 }
 
 /* === Responsiveness === */
-@media (max-width: 1200px){
+@media (max-width: 1100px){
     .sidebar{
         width: 70px;
     }
@@ -325,6 +325,10 @@ tr td:last-child{
     }
     .sidebar{
         left: -100% !important;
+    }
+    .sidebar .sidebar-brand h2 span:last-child,
+    .sidebar li a h2 span:last-child{
+        display: none;
     }
     header{
         width: 100% !important;
@@ -457,5 +461,9 @@ tr td:last-child{
     }
     .cards{
         grid-template-columns: 100%;
+    }
+    #nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
+    #nav-toggle:checked + .sidebar li a h2 span:last-child{
+        display: inline;
     }
 }
