@@ -472,4 +472,9 @@ tr td:last-child{
     .sidebar li a span:last-child{
         display: inline;
     }
+    #nav-toggle:checked + .sidebar{
+        left: 0 !important;
+        width: 270px;
+        z-index: 100;
+    }
 }
