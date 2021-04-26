@@ -330,6 +330,12 @@ tr td:last-child{
     .sidebar li a span:last-child{
         display: none;
     }
+    #nav-toggle:checked + .sidebar{
+        width: 70px;
+    }
+    #nav-toggle:checked + .sidebar li a span:last-child{
+        display: inline-block;
+    }
     header{
         width: 100% !important;
         left: 0 !important;
