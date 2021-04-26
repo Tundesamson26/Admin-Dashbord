@@ -316,7 +316,7 @@ tr td:last-child{
         left: 70px;
     }
 }
-@media (max-width: 980px){
+@media (max-width: 960px){
     .cards{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -398,6 +398,10 @@ tr td:last-child{
     }
     #nav-toggle:checked + .sidebar li a{
         padding-left: 1rem;
+    }
+    #nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
+    #nav-toggle:checked + .sidebar li a span:last-child{
+        display: inline;
     }
     .sidebar .sidebar-brand h2 span:last-child,
     .sidebar li a span:last-child{
